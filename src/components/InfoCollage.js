@@ -23,7 +23,8 @@ export default class InfoCollage extends Component {
             <div className="feature-subtitle container-md my-3">
               <h5>
                 Bookend will help you find books you're sure to love. A good
-                book doesn't have to end.
+                book doesn't have to end. Find new and exciting titles to keep
+                the adventure going.
               </h5>
             </div>
             <LearnMoreButton />
@@ -40,8 +41,9 @@ export default class InfoCollage extends Component {
             </div>
             <div className="feature-subtitle container-md my-3">
               <h5>
-                Minim proident cupidatat duis duis anim dolore deserunt elit
-                magna.
+                We know you're not one to think what everyone else is thinking.
+                Don't read what everyone else is reading. With Bookend, you can
+                curate your own personalized to-be-read book list.
               </h5>
             </div>
             <LearnMoreButton />
@@ -70,8 +72,9 @@ export default class InfoCollage extends Component {
             </div>
             <div className="feature-subtitle container-md my-3">
               <h5>
-                Minim proident cupidatat duis duis anim dolore deserunt elit
-                magna.
+                The secret to happiness is a good book in one hand and a strong
+                cup of coffee in the other. Let Bookend help you find the
+                perfect coffee pairing for your book.
               </h5>
             </div>
             <LearnMoreButton />

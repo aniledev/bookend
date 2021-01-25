@@ -48,22 +48,22 @@ export default class Footer extends Component {
             <ul className="list-unstyled text-small">
               <li>
                 <Link className="text-muted" to="/features">
-                  Feature 1
+                  Book Recommendations
                 </Link>
               </li>
               <li>
                 <Link className="text-muted" to="/features">
-                  Feature 2
+                  Personal List
                 </Link>
               </li>
               <li>
                 <Link className="text-muted" to="/features">
-                  Feature s
+                  Coffee Pairing
                 </Link>
               </li>
               <li>
                 <Link className="text-muted" to="/features">
-                  Feature 4
+                  Upcoming Features
                 </Link>
               </li>
             </ul>
