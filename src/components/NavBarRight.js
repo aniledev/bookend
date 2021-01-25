@@ -1,28 +1,29 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 
 export default class NavBarRight extends Component {
   render() {
     return (
       <div
-        class="navbar-right collapse navbar-collapse flex-row-reverse"
+        className="navbar-right collapse navbar-collapse flex-row-reverse"
         id="navbarNavAltMarkup"
       >
-        <div class="navbar-nav">
-          <a class="nav-link" href="/features.html">
+        <div className="navbar-nav">
+          <Link className="nav-link" to="/features">
             Features
-          </a>
-          <a class="nav-link" href="/about.html">
+          </Link>
+          <Link className="nav-link" to="/about">
             About
-          </a>
-          <a class="nav-link" href="/contact.html">
-            Contact Us
-          </a>
-          <a class="nav-link" href="/sign-up.html">
+          </Link>
+          <Link className="nav-link" to="/contact">
+            Contact
+          </Link>
+          <Link className="nav-link" to="/sign-up">
             Sign Up
-          </a>
-          <a class="nav-link" href="/log-in.html">
+          </Link>
+          <Link className="nav-link" to="/log-in">
             Log In
-          </a>
+          </Link>
         </div>
       </div>
     );

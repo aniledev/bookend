@@ -1,14 +1,15 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 
 export default class NavBarLeft extends Component {
   render() {
     return (
-      <div class="nav-bar-left">
-        <a class="navbar-brand brand-title" href="/index.html">
+      <div className="nav-bar-left">
+        <Link className="navbar-brand brand-title" to="/">
           Bookend
-        </a>
+        </Link>
         <button
-          class="navbar-toggler"
+          className="navbar-toggler"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarNavAltMarkup"
@@ -16,7 +17,7 @@ export default class NavBarLeft extends Component {
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <span class="navbar-toggler-icon"></span>
+          <span className="navbar-toggler-icon"></span>
         </button>
       </div>
     );

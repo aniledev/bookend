@@ -6,12 +6,11 @@ import "bootstrap/dist/css/bootstrap.css";
 export default class NavBar extends Component {
   render() {
     return (
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
+      <nav className="navbar navbar-expand-lg navbar-light bg-light">
+        <div className="container-fluid">
           <NavBarLeft />
-          
+
           <NavBarRight />
-          
         </div>
       </nav>
     );
