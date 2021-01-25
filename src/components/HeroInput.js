@@ -6,7 +6,7 @@ export default class HeroInput extends Component {
       <div className="form container-md search-form">
         <form className="search" action="/results.html">
           <div className="form-group-search">
-            <label for="search" className="sr-only">
+            <label htmlFor="search" className="sr-only">
               Search
             </label>
             <input
