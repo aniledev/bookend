@@ -15,7 +15,6 @@ export default class Home extends Component {
             <Hero />
             <MainImage />
           </section>
-
           <InfoCollage />
         </main>
 
