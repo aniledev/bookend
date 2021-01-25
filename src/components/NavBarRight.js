@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 export default class NavBarRight extends Component {
   render() {
@@ -9,21 +9,21 @@ export default class NavBarRight extends Component {
         id="navbarNavAltMarkup"
       >
         <div className="navbar-nav">
-          <Link className="nav-link" to="/features">
+          <NavLink className="nav-link" to="/features">
             Features
-          </Link>
-          <Link className="nav-link" to="/about">
+          </NavLink>
+          <NavLink className="nav-link" to="/about">
             About
-          </Link>
-          <Link className="nav-link" to="/contact">
+          </NavLink>
+          <NavLink className="nav-link" to="/contact">
             Contact
-          </Link>
-          <Link className="nav-link" to="/sign-up">
+          </NavLink>
+          <NavLink className="nav-link" to="/sign-up">
             Sign Up
-          </Link>
-          <Link className="nav-link" to="/log-in">
+          </NavLink>
+          <NavLink className="nav-link" to="/log-in">
             Log In
-          </Link>
+          </NavLink>
         </div>
       </div>
     );
