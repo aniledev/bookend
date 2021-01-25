@@ -1,15 +1,14 @@
 import React, { Component } from "react";
 import NavBarLeft from "./NavBarLeft";
-import NavBarRight from "./NavBarRight";
-import "bootstrap/dist/css/bootstrap.css";
+import NavBarRightMini from "./NavBarRightMini";
 
-export default class NavBar extends Component {
+export default class NavBarMini extends Component {
   render() {
     return (
       <nav className="navbar navbar-expand-lg navbar-light bg-light">
         <div className="container-fluid">
           <NavBarLeft />
-          <NavBarRight />
+          <NavBarRightMini />
         </div>
       </nav>
     );
