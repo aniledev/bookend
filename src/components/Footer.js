@@ -28,7 +28,7 @@ export default class Footer extends Component {
               <line x1="16.62" y1="12" x2="10.88" y2="21.94"></line>
             </svg>
             <h4>Bookend</h4>
-            <small className="d-block mb-3 text-muted">&copy; 2017-2018</small>
+            <small className="d-block mb-3 text-muted">&copy; 2020-2021</small>
             <div className="copyright">
               <div>Made with love by</div>
               <div>
