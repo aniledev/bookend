@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import LearnMoreButton from "./LearnMoreButton";
+import "../styles/info-collage.css";
 
 export default class InfoCollage extends Component {
   render() {
@@ -25,8 +25,15 @@ export default class InfoCollage extends Component {
                 magna.
               </h5>
             </div>
-
-            <LearnMoreButton />
+            <div class="container-md my-3">
+              <a
+                class="feature-button btn btn-outline-dark btn-md"
+                href="/features.html"
+                role="button"
+              >
+                Learn More
+              </a>
+            </div>
           </div>
         </section>
         <section class="row feature feature-2 d-flex justify-content-center">
@@ -44,7 +51,15 @@ export default class InfoCollage extends Component {
                 magna.
               </h5>
             </div>
-            <LearnMoreButton />
+            <div class="container-md my-3">
+              <a
+                class="feature-button btn btn-outline-dark btn-md"
+                href="/features.html"
+                role="button"
+              >
+                Learn More
+              </a>
+            </div>
           </div>
           <div class="col-md container-md d-flex text-center my-5 px-5">
             <img
@@ -74,7 +89,15 @@ export default class InfoCollage extends Component {
                 magna.
               </h5>
             </div>
-            <LearnMoreButton />
+            <div class="container-md my-3">
+              <a
+                class="feature-button btn btn-outline-dark btn-md"
+                href="/features.html"
+                role="button"
+              >
+                Learn More
+              </a>
+            </div>
           </div>
         </section>
       </>
