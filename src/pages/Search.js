@@ -4,6 +4,7 @@ import Footer from "../components/Footer";
 import HeroSubtitleMini from "../components/hero/HeroSubtitleMini";
 import HeroInput from "../components/hero/HeroInput";
 import HeroTitle from "../components/hero/HeroTitle";
+import SearchImage from "../components/SearchImage";
 
 export default class Search extends Component {
   render() {
@@ -15,6 +16,7 @@ export default class Search extends Component {
             <HeroTitle />
             <HeroSubtitleMini />
             <HeroInput />
+            <SearchImage />
           </section>
         </main>
         <Footer />
