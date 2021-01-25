@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import NavBar from "../components/NavBar/NavBar";
-import Hero from "../components/Hero/Hero";
+import NavBar from "../components/navbar/NavBar";
+import Hero from "../components/hero/Hero";
 import MainImage from "../components/MainImage";
 import InfoCollage from "../components/InfoCollage";
 import Footer from "../components/Footer";

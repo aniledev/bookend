@@ -1,9 +1,9 @@
 import React, { Component } from "react";
-import NavBarMini from "../components/NavBar/NavBarMini";
+import NavBarMini from "../components/navbar/NavBarMini";
 import Footer from "../components/Footer";
-import HeroSubtitleMini from "../components/Hero/HeroSubtitleMini";
-import HeroInput from "../components/Hero/HeroInput";
-import HeroTitle from "../components/Hero/HeroTitle";
+import HeroSubtitleMini from "../components/hero/HeroSubtitleMini";
+import HeroInput from "../components/hero/HeroInput";
+import HeroTitle from "../components/hero/HeroTitle";
 
 export default class Search extends Component {
   render() {

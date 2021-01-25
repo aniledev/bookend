@@ -1,8 +1,8 @@
 import React, { Component } from "react";
-import NavBarMini from "../components/NavBar/NavBarMini";
+import NavBarMini from "../components/navbar/NavBarMini";
 import Footer from "../components/Footer";
-import HeroTitle from "../components/Hero/HeroTitle";
-import HeroInput from "../components/Hero/HeroInput";
+import HeroTitle from "../components/hero/HeroTitle";
+import HeroInput from "../components/hero/HeroInput";
 
 export default class Results extends Component {
   render() {

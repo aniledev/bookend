@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import NavBarMini from "../components/NavBar/NavBarMini";
+import NavBarMini from "../components/navbar/NavBarMini";
 import Footer from "../components/Footer";
 
 export default class Profile extends Component {

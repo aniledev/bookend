@@ -1,7 +1,7 @@
-import React, { Component } from "react";
+import React, { Component } from "./node_modules/react";
 import NavBarLeft from "./NavBarLeft";
 import NavBarRight from "./NavBarRight";
-import "bootstrap/dist/css/bootstrap.css";
+import "./node_modules/bootstrap/dist/css/bootstrap.css";
 
 export default class NavBar extends Component {
   render() {
