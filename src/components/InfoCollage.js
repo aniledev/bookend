@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import "../styles/info-collage.css";
+import LearnMoreButton from "./LearnMoreButton";
 
 export default class InfoCollage extends Component {
   render() {
@@ -19,21 +20,13 @@ export default class InfoCollage extends Component {
                 <strong>Find books based on ones you already love.</strong>
               </h3>
             </div>
-            <div class="feature-subtitlecontainer-md my-3">
+            <div class="feature-subtitle container-md my-3">
               <h5>
                 Minim proident cupidatat duis duis anim dolore deserunt elit
                 magna.
               </h5>
             </div>
-            <div class="container-md my-3">
-              <a
-                class="feature-button btn btn-outline-dark btn-md"
-                href="/features.html"
-                role="button"
-              >
-                Learn More
-              </a>
-            </div>
+            <LearnMoreButton />
           </div>
         </section>
         <section class="row feature feature-2 d-flex justify-content-center">
@@ -45,21 +38,13 @@ export default class InfoCollage extends Component {
                 </strong>
               </h3>
             </div>
-            <div class="feature-subtitlecontainer-md my-3">
+            <div class="feature-subtitle container-md my-3">
               <h5>
                 Minim proident cupidatat duis duis anim dolore deserunt elit
                 magna.
               </h5>
             </div>
-            <div class="container-md my-3">
-              <a
-                class="feature-button btn btn-outline-dark btn-md"
-                href="/features.html"
-                role="button"
-              >
-                Learn More
-              </a>
-            </div>
+            <LearnMoreButton />
           </div>
           <div class="col-md container-md d-flex text-center my-5 px-5">
             <img
@@ -83,21 +68,13 @@ export default class InfoCollage extends Component {
                 <strong>Read books, drink coffee, be happy.</strong>
               </h3>
             </div>
-            <div class="feature-subtitlecontainer-md my-3">
+            <div class="feature-subtitle container-md my-3">
               <h5>
                 Minim proident cupidatat duis duis anim dolore deserunt elit
                 magna.
               </h5>
             </div>
-            <div class="container-md my-3">
-              <a
-                class="feature-button btn btn-outline-dark btn-md"
-                href="/features.html"
-                role="button"
-              >
-                Learn More
-              </a>
-            </div>
+            <LearnMoreButton />
           </div>
         </section>
       </>

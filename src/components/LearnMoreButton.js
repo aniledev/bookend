@@ -5,12 +5,13 @@ export default class LearnMoreButton extends Component {
   render() {
     return (
       <div class="container-md my-3">
-        <Link
-          className="feature-button btn btn-outline-dark btn-md"
-          href="/features"
+        <a
+          class="feature-button btn btn-outline-dark btn-md"
+          href="/features.html"
+          role="button"
         >
           Learn More
-        </Link>
+        </a>
       </div>
     );
   }
