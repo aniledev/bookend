@@ -1,8 +1,9 @@
 import React, { Component } from "react";
 import NavBarMini from "../components/NavBar/NavBarMini";
 import Footer from "../components/Footer";
-import HeroMiniSearch from "../components/HeroMiniSearch";
-import HeroInput from "../components/HeroInput";
+import HeroSubtitleMini from "../components/Hero/HeroSubtitleMini";
+import HeroInput from "../components/Hero/HeroInput";
+import HeroTitle from "../components/Hero/HeroTitle";
 
 export default class Search extends Component {
   render() {
@@ -11,7 +12,8 @@ export default class Search extends Component {
         <NavBarMini />
         <main className="main">
           <section className="hero pt-5">
-            <HeroMiniSearch />
+            <HeroTitle />
+            <HeroSubtitleMini />
             <HeroInput />
           </section>
         </main>

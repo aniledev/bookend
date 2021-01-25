@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import NavBarMini from "../components/NavBar/NavBarMini";
 import Footer from "../components/Footer";
-import HeroMiniResults from "../components/HeroMiniResults";
-import HeroInput from "../components/HeroInput";
+import HeroTitle from "../components/Hero/HeroTitle";
+import HeroInput from "../components/Hero/HeroInput";
 
 export default class Results extends Component {
   render() {
@@ -11,7 +11,7 @@ export default class Results extends Component {
         <NavBarMini />
         <main className="main">
           <section className="hero pt-5">
-            <HeroMiniResults />
+            <HeroTitle />
             <HeroInput />
           </section>
         </main>
