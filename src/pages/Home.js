@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import NavBar from "../components/NavBar";
+import NavBar from "../components/NavBar/NavBar";
 import Hero from "../components/Hero";
 import MainImage from "../components/MainImage";
 import InfoCollage from "../components/InfoCollage";

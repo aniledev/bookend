@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import NavBarMini from "../components/NavBarMini";
+import NavBarMini from "../components/NavBar/NavBarMini";
 import Footer from "../components/Footer";
 import HeroMiniResults from "../components/HeroMiniResults";
 import HeroInput from "../components/HeroInput";
