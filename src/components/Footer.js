@@ -32,7 +32,11 @@ export default class Footer extends Component {
             <div className="copyright">
               <div>Made with love by</div>
               <div>
-                <a href="https://github.com/aniledev" target="_blank">
+                <a
+                  href="https://github.com/aniledev"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   @aniledev
                 </a>
               </div>
