@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import SignUpButton from "../SignUpButton";
-import LogInButton from "../LogInButton";
+import SignUpButton from "../buttons/SignUpButton";
+import LogInButton from "../buttons/LogInButton";
 
 export default class HeroButtons extends Component {
   render() {

@@ -22,8 +22,8 @@ export default class InfoCollage extends Component {
             </div>
             <div className="feature-subtitle container-md my-3">
               <h5>
-                Minim proident cupidatat duis duis anim dolore deserunt elit
-                magna.
+                Bookend will help you find books you're sure to love. A good
+                book doesn't have to end.
               </h5>
             </div>
             <LearnMoreButton />
