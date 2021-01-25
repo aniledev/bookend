@@ -4,7 +4,7 @@ export default class HeroInput extends Component {
   render() {
     return (
       <div className="form container-md search-form">
-        <form className="search" action="/results.html">
+        <form className="search" action="/results">
           <div className="form-group-search">
             <label htmlFor="search" className="sr-only">
               Search
