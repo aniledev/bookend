@@ -6,21 +6,21 @@ export default class InfoCollage extends Component {
   render() {
     return (
       <>
-        <section class="row feature feature-1 d-flex justify-content-center">
-          <div class="col-md container-md d-flex text-center my-5 px-5">
+        <section className="row feature feature-1 d-flex justify-content-center">
+          <div className="col-md container-md d-flex text-center my-5 px-5">
             <img
-              class="feature-image"
+              className="feature-image"
               src="https://d3ui957tjb5bqd.cloudfront.net/uploads/images/5/50/50387.pic.jpg?1535005685"
               alt="A row of various colorful book covers against a gray background."
             />
           </div>
-          <div class="col-md container-md d-flex flex-column text-center my-5 px-5">
-            <div class="feature-title container-md my-3">
+          <div className="col-md container-md d-flex flex-column text-center my-5 px-5">
+            <div className="feature-title container-md my-3">
               <h3>
                 <strong>Find books based on ones you already love.</strong>
               </h3>
             </div>
-            <div class="feature-subtitle container-md my-3">
+            <div className="feature-subtitle container-md my-3">
               <h5>
                 Minim proident cupidatat duis duis anim dolore deserunt elit
                 magna.
@@ -29,16 +29,16 @@ export default class InfoCollage extends Component {
             <LearnMoreButton />
           </div>
         </section>
-        <section class="row feature feature-2 d-flex justify-content-center">
-          <div class="col-md container-md d-flex flex-column text-center my-5 px-5">
-            <div class="feature-title container-md my-3">
+        <section className="row feature feature-2 d-flex justify-content-center">
+          <div className="col-md container-md d-flex flex-column text-center my-5 px-5">
+            <div className="feature-title container-md my-3">
               <h3>
                 <strong>
                   Create a personal list of books to read...eventually.
                 </strong>
               </h3>
             </div>
-            <div class="feature-subtitle container-md my-3">
+            <div className="feature-subtitle container-md my-3">
               <h5>
                 Minim proident cupidatat duis duis anim dolore deserunt elit
                 magna.
@@ -46,29 +46,29 @@ export default class InfoCollage extends Component {
             </div>
             <LearnMoreButton />
           </div>
-          <div class="col-md container-md d-flex text-center my-5 px-5">
+          <div className="col-md container-md d-flex text-center my-5 px-5">
             <img
-              class="feature-image"
+              className="feature-image"
               src="https://miro.medium.com/max/4800/1*4ytjeTu2o0boDa5SNkGoZQ.jpeg"
               alt="A row of various colorful book covers against a gray background."
             />
           </div>
         </section>
-        <section class="row feature feature-3 d-flex justify-content-center">
-          <div class="col-md container-md d-flex text-center my-5 px-5">
+        <section className="row feature feature-3 d-flex justify-content-center">
+          <div className="col-md container-md d-flex text-center my-5 px-5">
             <img
-              class="feature-image"
+              className="feature-image"
               src="https://www.booklistreader.com/wp-content/uploads/2019/03/Cover-Trend-Alert-Winding-Curves-featured.jpg"
               alt="A row of various colorful book covers against a gray background."
             />
           </div>
-          <div class="col-md container-md d-flex flex-column text-center my-5 px-5">
-            <div class="feature-title container-md my-3">
+          <div className="col-md container-md d-flex flex-column text-center my-5 px-5">
+            <div className="feature-title container-md my-3">
               <h3>
                 <strong>Read books, drink coffee, be happy.</strong>
               </h3>
             </div>
-            <div class="feature-subtitle container-md my-3">
+            <div className="feature-subtitle container-md my-3">
               <h5>
                 Minim proident cupidatat duis duis anim dolore deserunt elit
                 magna.
