@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import SignUp from "../pages/SignUp";
 import SignUpButton from "./SignUpButton";
 import LogInButton from "./LogInButton";
 
