@@ -21,13 +21,13 @@ export default class SearchImage extends Component {
       },
     ];
 
-    const images = imageData.map((image) => (
+    const carousel = imageData.map((image) => (
       <img class="image-carousel" src={image.src} alt={image.alt} />
     ));
 
     return (
       <div class="hero-images container-fluid justify-content-around d-flex pt-3 my-5">
-        {images}
+        {carousel}
       </div>
     );
   }
