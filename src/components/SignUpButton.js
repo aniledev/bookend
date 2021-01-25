@@ -1,7 +1,12 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 
 export default class SignUpButton extends Component {
   render() {
-    return <div className="SignUpButton">SignUpButton</div>;
+    return (
+      <Link className="btn btn-primary btn-lg mx-2" to="/sign-up">
+        Sign Up
+      </Link>
+    );
   }
 }

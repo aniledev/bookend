@@ -10,9 +10,15 @@ export default class Home extends Component {
     return (
       <div className="Home-Page">
         <NavBar />
-        <Hero />
-        <MainImage />
-        <InfoCollage />
+        <main className="main">
+          <section className="hero pt-5">
+            <Hero />
+            <MainImage />
+          </section>
+
+          <InfoCollage />
+        </main>
+
         <Footer />
       </div>
     );

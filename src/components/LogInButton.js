@@ -1,7 +1,12 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 
 export default class LogInButton extends Component {
   render() {
-    return <div className="LogInButton">LogInButton</div>;
+    return (
+      <Link className="btn btn-primary btn-lg mx-2" href="/log-in">
+        Log In
+      </Link>
+    );
   }
 }

@@ -6,12 +6,11 @@ import HeroButtons from "./HeroButtons";
 export default class Hero extends Component {
   render() {
     return (
-      <div className="Hero">
-        Hero
+      <>
         <HeroTitle />
         <HeroSubtitle />
         <HeroButtons />
-      </div>
+      </>
     );
   }
 }
