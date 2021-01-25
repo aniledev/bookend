@@ -26,7 +26,7 @@ export default class SearchImage extends Component {
     ));
 
     return (
-      <div class="hero-images container-fluid justify-content-around d-flex pt-3 my-5">
+      <div className="hero-images container-fluid justify-content-around d-flex pt-3 my-5">
         {carousel}
       </div>
     );
