@@ -3,14 +3,14 @@ import React, { Component } from "react";
 export default class HeroInput extends Component {
   render() {
     return (
-      <div class="form container-md search-form">
-        <form class="search" action="/results.html">
-          <div class="form-group-search">
-            <label for="search" class="sr-only">
+      <div className="form container-md search-form">
+        <form className="search" action="/results.html">
+          <div className="form-group-search">
+            <label for="search" className="sr-only">
               Search
             </label>
             <input
-              class="form-control"
+              className="form-control"
               type="text"
               id="search"
               placeholder="Enter a book title to get recommendations"
