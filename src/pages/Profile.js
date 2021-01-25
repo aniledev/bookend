@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import NavBarMini from "../components/NavBarMini";
+import Footer from "../components/Footer";
 
 export default class Profile extends Component {
   render() {
@@ -7,6 +8,7 @@ export default class Profile extends Component {
       <div className="Profile-Page">
         <NavBarMini />
         Profile
+        <Footer />
       </div>
     );
   }

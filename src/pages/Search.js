@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import NavBarMini from "../components/NavBarMini";
+import Footer from "../components/Footer";
 
 export default class Search extends Component {
   render() {
@@ -7,6 +8,7 @@ export default class Search extends Component {
       <div className="Search-Page">
         <NavBarMini />
         Search
+        <Footer />
       </div>
     );
   }

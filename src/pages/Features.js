@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import NavBar from "../components/NavBar";
+import Footer from "../components/Footer";
 
 export default class Features extends Component {
   render() {
@@ -7,6 +8,7 @@ export default class Features extends Component {
       <div className="Features-Page">
         <NavBar />
         Features
+        <Footer />
       </div>
     );
   }

@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import NavBar from "../components/NavBar";
+import Footer from "../components/Footer";
 
 export default class LogIn extends Component {
   render() {
@@ -7,6 +8,7 @@ export default class LogIn extends Component {
       <div className="LogIn-Page">
         <NavBar />
         LogIn
+        <Footer />
       </div>
     );
   }
