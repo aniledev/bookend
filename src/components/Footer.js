@@ -15,7 +15,7 @@ export default class Footer extends Component {
               fill="none"
               stroke="currentColor"
               strokeWidth="2"
-              strokeLineCap="round"
+              strokeLinecap="round"
               strokeLinejoin="round"
               className="d-block mb-2"
             >
