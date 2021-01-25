@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 export default class LogInButton extends Component {
   render() {
     return (
-      <Link className="btn btn-primary btn-lg mx-2" href="/log-in">
+      <Link className="btn btn-primary btn-lg mx-2" to="/log-in">
         Log In
       </Link>
     );
