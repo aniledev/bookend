@@ -3,7 +3,6 @@ import NavBar from "../components/navbar/NavBar";
 import Footer from "../components/Footer";
 import LogInTitle from "../components/LogInTitle";
 import LogInButtonSmall from "../components/buttons/LogInButtonSmall";
-import LogInButton from "../components/buttons/LogInButton";
 import LogInForm from "../components/LogInForm";
 
 export default class LogIn extends Component {
