@@ -10,7 +10,6 @@ export default class SignUp extends Component {
     return (
       <div className="SignUp-Page">
         <NavBar />
-        SignUp
         <main class="main">
           <section class="sign-up-section pt-5">
             <SignUpTitle />
