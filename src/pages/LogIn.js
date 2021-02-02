@@ -7,7 +7,51 @@ export default class LogIn extends Component {
     return (
       <div className="LogIn-Page">
         <NavBar />
-        LogIn
+        
+
+        <main class="main">
+      <section class="log-in-section pt-5">
+        <div class="container-md log-in-title text-center py-2">
+          <h1>We knew you couldn't put us down either. Welcome back.</h1>
+        </div>
+        <div class="form container-md log-in-form">
+          <form class="log-in">
+            <div class="form-group">
+              <label for="email" class="sr-only">Email</label>
+              <input
+                class="form-control"
+                pattern="/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/"
+                id="email"
+                placeholder="Email"
+                min="1"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="password" class="sr-only">Password</label>
+              <input
+                class="form-control"
+                type="password"
+                id="password"
+                placeholder="Password"
+                min="8"
+                max="16"
+                required
+              />
+            </div>
+          </form>
+        </div>
+        <div class="log-in-button container-md text-center py-3">
+          <a class="btn btn-primary" href="/search.html" role="button"
+            >Log In</a
+          >
+        </div>
+      </section>
+    </main>
+
+
+
+
         <Footer />
       </div>
     );
