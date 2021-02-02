@@ -15,8 +15,8 @@ export default class LogIn extends Component {
         <main class="main">
           <section class="log-in-section pt-5">
             <LogInTitle />
-<LogInForm/>
-            
+            <LogInForm />
+
             <LogInButtonSmall />
           </section>
         </main>
