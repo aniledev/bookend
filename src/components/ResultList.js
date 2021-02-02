@@ -5,14 +5,14 @@ import STORE from "../dummy-store";
 
 export default class ResultList extends Component {
   render() {
-    // const resultItems = STORE.map((book) => (
-    //     <ResultItem description={book.description} title={book.title}/>
-    // ));
+    const resultItems = STORE.map((book) => (
+      <ResultItem
+        description={book.description}
+        title={book.title}
+        author={book.author}
+      />
+    ));
 
-    return (
-      <section class="container-md results">
-        <ResultItem />
-      </section>
-    );
+    return <section class="container-md results">{resultItems}</section>;
   }
 }
