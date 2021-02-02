@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import NavBar from "../components/navbar/NavBar";
 import Footer from "../components/Footer";
+import LogInTitle from "../components/LogInTitle";
+import LogInButtonSmall from "../components/buttons/LogInButtonSmall";
 
 export default class LogIn extends Component {
   render() {
@@ -10,8 +12,8 @@ export default class LogIn extends Component {
 
         <main class="main">
           <section class="log-in-section pt-5">
-            <LogIn />
-           
+            <LogInTitle />
+
             <div class="form container-md log-in-form">
               <form class="log-in">
                 <div class="form-group">
@@ -43,7 +45,7 @@ export default class LogIn extends Component {
                 </div>
               </form>
             </div>
-            
+            <LogInButtonSmall />
           </section>
         </main>
 
