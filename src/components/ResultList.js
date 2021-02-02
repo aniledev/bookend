@@ -10,6 +10,7 @@ export default class ResultList extends Component {
         description={book.description}
         title={book.title}
         author={book.author}
+        img={book.img}
       />
     ));
 
