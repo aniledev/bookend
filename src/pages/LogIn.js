@@ -43,11 +43,7 @@ export default class LogIn extends Component {
                 </div>
               </form>
             </div>
-            <div class="log-in-button container-md text-center py-3">
-              <a class="btn btn-primary" href="/search.html" role="button">
-                Log In
-              </a>
-            </div>
+            
           </section>
         </main>
 
