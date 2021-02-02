@@ -3,7 +3,7 @@ import "../styles/results-image.css";
 
 export default class ResultItem extends Component {
   render() {
-    let summary = this.props.description.substr(0, 500);
+    let summary = this.props.description.substr(0, 650);
 
     return (
       <section class="row result-item d-flex justify-content-center">
