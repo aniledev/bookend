@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import NavBar from "../components/navbar/NavBar";
 import Footer from "../components/Footer";
 import SignUpTitle from "../components/SignUpTitle";
-import SignUpForm from "../components/SignUpForm";
+import SignUpForm from "../components/forms/SignUpForm";
 import SignUpButtonSmall from "../components/buttons/SignUpButtonSmall";
 
 export default class SignUp extends Component {
@@ -15,8 +15,6 @@ export default class SignUp extends Component {
             <SignUpTitle />
             <SignUpForm />
             <SignUpButtonSmall />
-
-           
           </section>
         </main>
         <Footer />

@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import "../styles/results-image.css";
 
 export default class ResultItem extends Component {
   render() {
