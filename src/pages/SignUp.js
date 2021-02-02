@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import NavBar from "../components/navbar/NavBar";
 import Footer from "../components/Footer";
-import SignUpTitle from "../components/SignUpTitle";
+import SignUpTitle from "../components/forms/SignUpTitle";
 import SignUpForm from "../components/forms/SignUpForm";
 import SignUpButtonSmall from "../components/buttons/SignUpButtonSmall";
 

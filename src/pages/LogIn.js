@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import NavBar from "../components/navbar/NavBar";
 import Footer from "../components/Footer";
-import LogInTitle from "../components/LogInTitle";
+import LogInTitle from "../components/forms/LogInTitle";
 import LogInButtonSmall from "../components/buttons/LogInButtonSmall";
 import LogInForm from "../components/forms/LogInForm";
 
