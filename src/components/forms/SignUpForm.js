@@ -25,10 +25,25 @@ export default class SignUpForm extends Component {
   }
 
   // methods for validating form inputs
-validateName(){}
-validateEmail(){}
-validatePassword(){}
-validateRetypePassword(){}
+  validateName() {
+    // if user did not input a name
+    // if name is less than 3 characters or greater than 50 characters
+  }
+  validateEmail() {
+    // if user did not input an email
+    // if the email does not match a specific pattern
+    // if the email is less than 5 characters and greater than 100 characters
+  }
+  validatePassword() {
+    // if the user did not input a password
+    // if the password is less than 8 characters and more than 20 characters
+    // if the password does not contain a number
+    // if the password does not contain a special character
+  }
+  validateRetypePassword() {
+    // if the user did not input a retype password
+    // if the retype password and password do not match each other
+  }
 
   // methods to to update the state
   updateName(name) {
@@ -75,7 +90,7 @@ validateRetypePassword(){}
               type="text"
               id="name"
               placeholder="Name"
-              min="1"
+              min="3"
               max="50"
               required
               onChange={(e) => this.updateName(e.target.value)}
@@ -90,7 +105,8 @@ validateRetypePassword(){}
               pattern="/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/"
               id="email"
               placeholder="Email"
-              min="1"
+              min="5"
+              max="100"
               required
               onChange={(e) => this.updateEmail(e.target.value)}
             />
@@ -105,7 +121,7 @@ validateRetypePassword(){}
               id="password"
               placeholder="Password"
               min="8"
-              max="16"
+              max="20"
               required
               onChange={(e) => this.updatePassword(e.target.value)}
             />
