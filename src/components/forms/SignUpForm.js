@@ -26,21 +26,31 @@ export default class SignUpForm extends Component {
 
   // methods for validating form inputs
   validateName() {
+    const name = this.state.name.value.trim();
     // if user did not input a name
-    // if name is less than 3 characters or greater than 50 characters
+    if (name.length === 0) {
+      return "Your name is required. ";
+    } // if name is less than 3 characters or greater than 50 characters
+    else if (name.length < 3 || name.length > 50) {
+      return "Name must be between 3 and 50 characters.";
+    }
   }
   validateEmail() {
+    const email = this.state.email.value.trim();
     // if user did not input an email
     // if the email does not match a specific pattern
     // if the email is less than 5 characters and greater than 100 characters
   }
   validatePassword() {
+    const password = this.state.password.value.trim();
     // if the user did not input a password
     // if the password is less than 8 characters and more than 20 characters
     // if the password does not contain a number
     // if the password does not contain a special character
   }
   validateRetypePassword() {
+    const password = this.state.password.value.trim();
+    const retypePassword = this.state.retypePassword.value.trim();
     // if the user did not input a retype password
     // if the retype password and password do not match each other
   }
