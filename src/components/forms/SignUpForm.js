@@ -51,10 +51,17 @@ export default class SignUpForm extends Component {
     });
   }
 
+  // method for submitting form inputs to the server
+  handleSubmit(event) {
+    // code too be executed here
+    event.preventDefault();
+    console.log(`Form was submitted. Yay!`);
+  }
+
   render() {
     return (
       <div className="form container-md sign-up-form">
-        <form class="sign-up">
+        <form class="sign-up" onSubmit={(e) => this.handleSubmit(e)}>
           <div className="form-group">
             <label htmlFor="name" class="sr-only">
               Name
