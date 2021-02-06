@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import NavBar from "../components/navbar/NavBar";
 import Hero from "../components/hero/Hero";
 import HomeMainImage from "../components/HomeMainImage";
-import InfoCollage from "../components/InfoCollage";
+import HomeInfoCollage from "../components/HomeInfoCollage";
 import Footer from "../components/Footer";
 
 export default class Home extends Component {
@@ -15,7 +15,7 @@ export default class Home extends Component {
             <Hero />
             <HomeMainImage />
           </section>
-          <InfoCollage />
+          <HomeInfoCollage />
         </main>
 
         <Footer />

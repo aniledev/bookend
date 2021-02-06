@@ -1,8 +1,8 @@
 import React, { Component } from "react";
-import "../styles/info-collage.css";
+import "../styles/home-info-collage.css";
 import LearnMoreButton from "./buttons/LearnMoreButton";
 
-export default class InfoCollage extends Component {
+export default class HomeInfoCollage extends Component {
   render() {
     return (
       <>
