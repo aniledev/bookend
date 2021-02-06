@@ -25,6 +25,10 @@ export default class SignUpForm extends Component {
   }
 
   // methods for validating form inputs
+validateName(){}
+validateEmail(){}
+validatePassword(){}
+validateRetypePassword(){}
 
   // methods to to update the state
   updateName(name) {
