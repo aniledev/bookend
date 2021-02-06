@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import NavBar from "../components/navbar/NavBar";
-import Hero from "../components/hero/Hero";
+import HomeHero from "../components/hero/HomeHero";
 import HomeMainImage from "../components/HomeMainImage";
 import HomeInfoCollage from "../components/HomeInfoCollage";
 import Footer from "../components/Footer";
@@ -12,7 +12,7 @@ export default class Home extends Component {
         <NavBar />
         <main className="main">
           <section className="hero pt-5">
-            <Hero />
+            <HomeHero />
             <HomeMainImage />
           </section>
           <HomeInfoCollage />

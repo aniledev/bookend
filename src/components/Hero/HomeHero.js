@@ -3,7 +3,7 @@ import HeroTitle from "./HeroTitle";
 import HeroSubtitle from "./HeroSubtitle";
 import HeroButtons from "./HeroButtons";
 
-export default class Hero extends Component {
+export default class HomeHero extends Component {
   render() {
     return (
       <>
