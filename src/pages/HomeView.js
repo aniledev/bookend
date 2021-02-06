@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import NavBar from "../components/navbar/NavBar";
 import Hero from "../components/hero/Hero";
-import MainImage from "../components/MainImage";
+import HomeMainImage from "../components/HomeMainImage";
 import InfoCollage from "../components/InfoCollage";
 import Footer from "../components/Footer";
 
@@ -13,7 +13,7 @@ export default class Home extends Component {
         <main className="main">
           <section className="hero pt-5">
             <Hero />
-            <MainImage />
+            <HomeMainImage />
           </section>
           <InfoCollage />
         </main>
