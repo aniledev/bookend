@@ -5,10 +5,22 @@ export default class SignUpForm extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      name: {},
-      email: {},
-      password: {},
-      retypePassword: {},
+      name: {
+        value: "",
+        changed: false,
+      },
+      email: {
+        value: "",
+        changed: false,
+      },
+      password: {
+        value: "",
+        changed: false,
+      },
+      retypePassword: {
+        value: "",
+        changed: false,
+      },
     };
   }
   render() {
