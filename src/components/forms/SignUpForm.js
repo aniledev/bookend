@@ -2,6 +2,15 @@ import React, { Component } from "react";
 import "../../styles/sign-up-form.css";
 
 export default class SignUpForm extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      name: {},
+      email: {},
+      password: {},
+      retypePassword: {},
+    };
+  }
   render() {
     return (
       <div className="form container-md sign-up-form">
