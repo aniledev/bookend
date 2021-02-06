@@ -23,6 +23,34 @@ export default class SignUpForm extends Component {
       },
     };
   }
+
+  // methods for validating form inputs
+
+  // methods to to update the state
+  updateName(name) {
+    this.setState({
+      name: { value: name, changed: true },
+    });
+  }
+
+  updateEmail(email) {
+    this.setState({
+      email: { value: email, changed: true },
+    });
+  }
+
+  updatePassword(password) {
+    this.setState({
+      password: { value: password, changed: true },
+    });
+  }
+
+  updateRetypePassword(retypePassword) {
+    this.setState({
+      retypePassword: { value: retypePassword, changed: true },
+    });
+  }
+
   render() {
     return (
       <div className="form container-md sign-up-form">
