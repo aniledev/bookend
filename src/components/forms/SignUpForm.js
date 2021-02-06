@@ -18,6 +18,7 @@ export default class SignUpForm extends Component {
               min="1"
               max="50"
               required
+              onChange={(e) => this.updateName(e.target.value)}
             />
           </div>
           <div className="form-group">
@@ -31,6 +32,7 @@ export default class SignUpForm extends Component {
               placeholder="Email"
               min="1"
               required
+              onChange={(e) => this.updateEmail(e.target.value)}
             />
           </div>
           <div className="form-group">
@@ -45,6 +47,7 @@ export default class SignUpForm extends Component {
               min="8"
               max="16"
               required
+              onChange={(e) => this.updatePassword(e.target.value)}
             />
           </div>
           <div className="form-group">
@@ -59,6 +62,7 @@ export default class SignUpForm extends Component {
               min="8"
               max="16"
               required
+              onChange={(e) => this.updateRetypePassword(e.target.value)}
             />
           </div>
         </form>
