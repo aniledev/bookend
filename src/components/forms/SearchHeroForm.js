@@ -1,6 +1,10 @@
 import React, { Component } from "react";
 
 export default class SearchHeroForm extends Component {
+  // method to validate the state
+updateSearch(){}
+
+  //method to update the state
   render() {
     return (
       <div className="form container-md search-form">
@@ -17,6 +21,7 @@ export default class SearchHeroForm extends Component {
               min="3"
               value="red at the bone"
               required
+              onChange={(e) => this.updateSearch(e.target.value)}
             />
           </div>
         </form>
