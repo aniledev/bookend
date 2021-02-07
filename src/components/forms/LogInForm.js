@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import "../../styles/log-in-form.css";
 import FormValidationError from "../FormValidationError";
-import FormValidationConfirm from "../FormValidationConfirm";
 
 export default class LogInForm extends Component {
   constructor(props) {

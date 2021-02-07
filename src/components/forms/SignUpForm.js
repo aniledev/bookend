@@ -2,8 +2,6 @@ import React, { Component } from "react";
 import "../../styles/sign-up-form.css";
 import FormValidationError from "../FormValidationError";
 import FormValidationConfirm from "../FormValidationConfirm";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCheck } from "@fortawesome/free-solid-svg-icons";
 
 export default class SignUpForm extends Component {
   constructor(props) {
