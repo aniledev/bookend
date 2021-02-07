@@ -17,19 +17,27 @@ export default class LogInForm extends Component {
     };
   }
 
-  // methods for validating the inputs on submision of the form
+  // methods for validating the inputs on submission of the form
 
-  validateEmail() {}
-  validatePassword() {}
+  validateEmail() {
+    const email = this.state.email.value.trim();
+    // if email is not entered
+    if (!email) {
+      return "Please enter your email address.";
+    }
+  }
+  validatePassword() {
+    const password = this.state.password.value.trim();
+    // if password is not entered
+    if (!password) {
+      return "Please enter your password."
+    }
+  }
 
   // methods for updating the state based on form inputs
-  updateEmail() {
-    // if email is not entered
-  }
+  updateEmail() {}
 
-  updatePassword() {
-    // if password is not entered
-  }
+  updatePassword() {}
 
   render() {
     return (
