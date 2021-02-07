@@ -17,5 +17,5 @@ export default function FormValidationConfirm(props) {
 }
 
 FormValidationConfirm.propTypes = {
-  message: PropTypes.string,
+  message: PropTypes.bool,
 };

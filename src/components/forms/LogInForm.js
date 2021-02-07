@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import "../../styles/log-in-form.css";
 import FormValidationError from "../FormValidationError";
+import FormValidationConfirm from "../FormValidationConfirm";
 
 export default class LogInForm extends Component {
   constructor(props) {
@@ -51,7 +52,7 @@ export default class LogInForm extends Component {
   handleSubmit(event) {
     // code to be executed here
     event.preventDefault();
-    console.log(`Form was submited. Yay!`);
+    console.log(`Form was submitted. Yay!`);
   }
 
   render() {
