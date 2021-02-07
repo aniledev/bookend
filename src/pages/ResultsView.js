@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import NavBarMini from "../components/navbar/NavBarMini";
 import Footer from "../components/Footer";
 import HeroTitle from "../components/hero/HeroTitle";
-import SearchHeroForm from "../components/hero/SearchHeroForm";
+import SearchHeroForm from "../components/forms/SearchHeroForm";
 import ResultsList from "../components/ResultsList";
 
 export default class Results extends Component {
