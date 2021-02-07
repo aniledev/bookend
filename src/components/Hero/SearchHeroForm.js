@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 
-export default class HeroInput extends Component {
+export default class SearchHeroForm extends Component {
   render() {
     return (
       <div className="form container-md search-form">

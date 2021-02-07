@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import NavBarMini from "../components/navbar/NavBarMini";
 import Footer from "../components/Footer";
 import HeroTitle from "../components/hero/HeroTitle";
-import HeroInput from "../components/hero/HeroInput";
+import SearchHeroForm from "../components/hero/SearchHeroForm";
 import ResultsList from "../components/ResultsList";
 
 export default class Results extends Component {
@@ -13,7 +13,7 @@ export default class Results extends Component {
         <main className="main">
           <section className="hero pt-5">
             <HeroTitle />
-            <HeroInput />
+            <SearchHeroForm />
           </section>
           <ResultsList />
         </main>
