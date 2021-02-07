@@ -63,7 +63,7 @@ export default class LogInForm extends Component {
         <div className="form container-md log-in-form">
           <form className="log-in">
             <div className="form-group">
-              <label for="email" className="sr-only">
+              <label htmlFor="email" className="sr-only">
                 Email
               </label>
               <input
@@ -80,7 +80,7 @@ export default class LogInForm extends Component {
               <FormValidationError message={emailInputError} />
             )}
             <div className="form-group">
-              <label for="password" className="sr-only">
+              <label htmlFor="password" className="sr-only">
                 Password
               </label>
               <input
