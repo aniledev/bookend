@@ -36,6 +36,7 @@ export default class SignUpForm extends Component {
       return "Name must be between 3 and 50 characters.";
     }
   }
+  
   validateEmail() {
     const email = this.state.email.value.trim();
     const regex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:.[a-zA-Z0-9-]+)*$/;
