@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "../styles/home-info-collage.css";
-import LearnMoreButton from "./buttons/LearnMoreButton";
+import HomeLearnMoreButton from "./buttons/HomeLearnMoreButton";
 
 export default class HomeInfoCollage extends Component {
   render() {
@@ -27,7 +27,7 @@ export default class HomeInfoCollage extends Component {
                 the adventure going.
               </h5>
             </div>
-            <LearnMoreButton />
+            <HomeLearnMoreButton />
           </div>
         </section>
         <section className="row feature feature-2 d-flex justify-content-center">
@@ -46,7 +46,7 @@ export default class HomeInfoCollage extends Component {
                 curate your own personalized to-be-read book list.
               </h5>
             </div>
-            <LearnMoreButton />
+            <HomeLearnMoreButton />
           </div>
           <div className="col-md container-md d-flex text-center my-5 px-5">
             <img
@@ -77,7 +77,7 @@ export default class HomeInfoCollage extends Component {
                 perfect coffee pairing for your book.
               </h5>
             </div>
-            <LearnMoreButton />
+            <HomeLearnMoreButton />
           </div>
         </section>
       </>
