@@ -53,18 +53,33 @@ export default class SignUpForm extends Component {
       return "Email address must be between 8 and 100 characters.";
     }
   }
+
   validatePassword() {
     const password = this.state.password.value.trim();
+    const regex = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$/gm;
     // if the user did not input a password
-    // if the password is less than 8 characters and more than 20 characters
+    if (!password) {
+      return "A password is required.";
+    }
+    // if the password is less than 8 characters
     // if the password does not contain a number
     // if the password does not contain a special character
+    if (!password.match(regex)) {
+      return "Password must be at least 8 characters and contain 1 uppercase letter, 1 lowercase letter, and 1 number.";
+    }
   }
+
   validateRetypePassword() {
     const password = this.state.password.value.trim();
     const retypePassword = this.state.retypePassword.value.trim();
     // if the user did not input a retype password
+    if (!retypePassword) {
+      return "You must re-enter your password.";
+    }
     // if the retype password and password do not match each other
+    if (password !== retypePassword) {
+      return "Passwords must match.";
+    }
   }
 
   // methods to to update the state
