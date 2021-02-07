@@ -44,7 +44,7 @@ export default class SearchHeroForm extends Component {
 
     return (
       <div className="form container-md search-form">
-        <form className="search" action="/results">
+        <form className="search" onSubmit={(e) => this.handleSubmit(e)}>
           <div className="form-group-search">
             <label htmlFor="search" className="sr-only">
               Search
