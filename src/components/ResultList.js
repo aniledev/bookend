@@ -14,6 +14,6 @@ export default class ResultList extends Component {
       />
     ));
 
-    return <section class="container-md results">{resultItems}</section>;
+    return <section className="container-md results">{resultItems}</section>;
   }
 }

@@ -22,7 +22,7 @@ export default class SearchImage extends Component {
     ];
 
     const carousel = imageData.map((image) => (
-      <img class="image-carousel" src={image.src} alt={image.alt} />
+      <img className="image-carousel" src={image.src} alt={image.alt} />
     ));
 
     return (

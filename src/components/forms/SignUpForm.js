@@ -123,13 +123,13 @@ export default class SignUpForm extends Component {
     return (
       <>
         <div className="form container-md sign-up-form">
-          <form class="sign-up" onSubmit={(e) => this.handleSubmit(e)}>
+          <form className="sign-up" onSubmit={(e) => this.handleSubmit(e)}>
             <div className="form-group">
-              <label htmlFor="name" class="sr-only">
+              <label htmlFor="name" className="sr-only">
                 Name
               </label>
               <input
-                class="form-control"
+                className="form-control"
                 type="text"
                 id="name"
                 placeholder="Name"
@@ -143,12 +143,11 @@ export default class SignUpForm extends Component {
               <FormValidationError message={nameInputError} />
             )}
             <div className="form-group">
-              <label htmlFor="email" class="sr-only">
+              <label htmlFor="email" className="sr-only">
                 Email
               </label>
               <input
-                class="form-control"
-                pattern="/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/"
+                className="form-control"
                 id="email"
                 placeholder="Email"
                 min="8"
@@ -161,11 +160,11 @@ export default class SignUpForm extends Component {
               <FormValidationError message={emailInputError} />
             )}
             <div className="form-group">
-              <label htmlFor="password" class="sr-only">
+              <label htmlFor="password" className="sr-only">
                 Password
               </label>
               <input
-                class="form-control"
+                className="form-control"
                 type="password"
                 id="password"
                 placeholder="Password"
@@ -178,12 +177,12 @@ export default class SignUpForm extends Component {
               <FormValidationError message={passwordInputError} />
             )}
             <div className="form-group">
-              <label htmlFor="retype-password" class="sr-only">
+              <label htmlFor="retype-password" className="sr-only">
                 Retype password
               </label>
               <input
                 type="password"
-                class="form-control"
+                className="form-control"
                 id="retype-password"
                 placeholder="Retype password"
                 min="8"
@@ -195,12 +194,12 @@ export default class SignUpForm extends Component {
               <FormValidationError message={retypePasswordInputError} />
             )}
             <div className="sign-up-button container-md text-center py-3">
-              {/* <Link class="btn btn-primary" to="/search">
+              {/* <Link className="btn btn-primary" to="/search">
             Sign Up
           </Link> */}
               <button
                 type="submit"
-                class="btn btn-primary"
+                className="btn btn-primary"
                 disabled={
                   this.validateName() ||
                   this.validateEmail() ||

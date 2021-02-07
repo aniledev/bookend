@@ -10,8 +10,8 @@ export default class LogIn extends Component {
       <div className="LogIn-Page">
         <NavBar />
 
-        <main class="main">
-          <section class="log-in-section pt-5">
+        <main className="main">
+          <section className="log-in-section pt-5">
             <LogInTitle />
             <LogInForm />
           </section>

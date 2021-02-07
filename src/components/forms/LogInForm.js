@@ -60,15 +60,14 @@ export default class LogInForm extends Component {
 
     return (
       <>
-        <div class="form container-md log-in-form">
-          <form class="log-in">
-            <div class="form-group">
-              <label for="email" class="sr-only">
+        <div className="form container-md log-in-form">
+          <form className="log-in">
+            <div className="form-group">
+              <label for="email" className="sr-only">
                 Email
               </label>
               <input
-                class="form-control"
-                pattern="/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/"
+                className="form-control"
                 id="email"
                 placeholder="Email"
                 min="8"
@@ -80,12 +79,12 @@ export default class LogInForm extends Component {
             {this.state.email.changed && (
               <FormValidationError message={emailInputError} />
             )}
-            <div class="form-group">
-              <label for="password" class="sr-only">
+            <div className="form-group">
+              <label for="password" className="sr-only">
                 Password
               </label>
               <input
-                class="form-control"
+                className="form-control"
                 type="password"
                 id="password"
                 placeholder="Password"
@@ -98,10 +97,10 @@ export default class LogInForm extends Component {
               <FormValidationError message={passwordInputError} />
             )}
             <div className="sign-up-button container-md text-center py-3">
-              {/* <Link class="btn btn-primary" to="/search">
+              {/* <Link className="btn btn-primary" to="/search">
            Log In
          </Link> */}
-              <button type="submit" class="btn btn-primary">
+              <button type="submit" className="btn btn-primary">
                 Log In
               </button>
             </div>
