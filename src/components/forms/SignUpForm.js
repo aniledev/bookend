@@ -31,7 +31,7 @@ export default class SignUpForm extends Component {
     const name = this.state.name.value.trim();
     // if user did not input a name
     if (name.length === 0) {
-      return "Your name is required. ";
+      return "Your name is required.";
     } // if name is less than 3 characters or greater than 50 characters
     else if (name.length < 3 || name.length > 50) {
       return "Name must be between 3 and 50 characters.";
@@ -39,8 +39,15 @@ export default class SignUpForm extends Component {
   }
   validateEmail() {
     const email = this.state.email.value.trim();
+    const regex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:.[a-zA-Z0-9-]+)*$/;
     // if user did not input an email
+    if (!email) {
+      return "An email is required.";
+    }
     // if the email does not match a specific pattern
+    if (!email.match(regex)) {
+      return "You must enter a valid email address.";
+    }
     // if the email is less than 5 characters and greater than 100 characters
   }
   validatePassword() {
