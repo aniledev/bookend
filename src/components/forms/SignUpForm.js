@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import "../../styles/sign-up-form.css";
 import FormValidationError from "../FormValidationError";
-import { Link } from "react-router-dom";
 
 export default class SignUpForm extends Component {
   constructor(props) {
