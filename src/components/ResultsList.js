@@ -1,9 +1,9 @@
 import React, { Component } from "react";
-import ResultItem from "../components/ResultItem";
+import ResultItem from "./ResultItem";
 import "../styles/result-list.css";
 import STORE from "../dummy-store";
 
-export default class ResultList extends Component {
+export default class ResultsList extends Component {
   render() {
     const resultItems = STORE.map((book) => (
       <ResultItem
