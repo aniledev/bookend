@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import NavBar from "../components/navbar/NavBar";
 import HomeHero from "../components/hero/HomeHero";
-import HomeMainImage from "../components/HomeMainImage";
-import HomeInfoCollage from "../components/HomeInfoCollage";
+import HomeMainImage from "../components/home/HomeMainImage";
+import HomeInfoCollage from "../components/home/HomeInfoCollage";
 import Footer from "../components/Footer";
 
 export default class Home extends Component {

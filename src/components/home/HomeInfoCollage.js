@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import "../styles/home-info-collage.css";
-import HomeLearnMoreButton from "./buttons/HomeLearnMoreButton";
+import "../../styles/home-info-collage.css";
+import HomeLearnMoreButton from "../buttons/HomeLearnMoreButton";
 
 export default class HomeInfoCollage extends Component {
   render() {

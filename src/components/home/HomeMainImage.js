@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import "../styles/home-main-image.css";
+import "../../styles/home-main-image.css";
 
 export default class HomeMainImage extends Component {
   render() {
