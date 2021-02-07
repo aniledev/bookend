@@ -2,6 +2,27 @@ import React, { Component } from "react";
 import "../../styles/log-in-form.css";
 
 export default class LogInForm extends Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      email: {
+        value: "",
+        changed: false,
+      },
+      password: {
+        value: "",
+        changed: false,
+      }
+    }
+    }
+}
+
+  // methods for updating the state based on form inputs
+  updateEmail() {}
+
+  updatePassword() {}
+
   render() {
     return (
       <>
@@ -16,8 +37,10 @@ export default class LogInForm extends Component {
                 pattern="/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/"
                 id="email"
                 placeholder="Email"
-                min="1"
+                min="8"
+                max="100"
                 required
+                onChange={(e) => this.updateEmail(e.target.value)}
               />
             </div>
             <div class="form-group">
@@ -30,8 +53,8 @@ export default class LogInForm extends Component {
                 id="password"
                 placeholder="Password"
                 min="8"
-                max="16"
                 required
+                onChange={(e) => this.updatePassword(e.target.value)}
               />
             </div>
             <div className="sign-up-button container-md text-center py-3">

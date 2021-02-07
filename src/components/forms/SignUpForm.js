@@ -151,7 +151,7 @@ export default class SignUpForm extends Component {
                 pattern="/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/"
                 id="email"
                 placeholder="Email"
-                min="5"
+                min="8"
                 max="100"
                 required
                 onChange={(e) => this.updateEmail(e.target.value)}
@@ -170,7 +170,6 @@ export default class SignUpForm extends Component {
                 id="password"
                 placeholder="Password"
                 min="8"
-                max="20"
                 required
                 onChange={(e) => this.updatePassword(e.target.value)}
               />
@@ -188,7 +187,6 @@ export default class SignUpForm extends Component {
                 id="retype-password"
                 placeholder="Retype password"
                 min="8"
-                max="16"
                 required
                 onChange={(e) => this.updateRetypePassword(e.target.value)}
               />
