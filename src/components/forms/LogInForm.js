@@ -46,7 +46,15 @@ export default class LogInForm extends Component {
     });
   }
 
-  render() {
+  // method for submitting form inputs to the server and comparing them to the database
+  handleSubmit(event) {
+    // code to be executed here
+    event.preventDefault();
+    console.log(`Form was submited. Yay!`);
+  }
+
+  render () {
+    
     return (
       <>
         <div class="form container-md log-in-form">
