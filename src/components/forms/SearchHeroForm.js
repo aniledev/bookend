@@ -2,9 +2,16 @@ import React, { Component } from "react";
 
 export default class SearchHeroForm extends Component {
   // method to validate the state
-updateSearch(){}
+  
 
   //method to update the state
+  updateSearch(search) {
+    this.setState({
+      search: { value: search, changed: true },
+    });
+  }
+
+
   render() {
     return (
       <div className="form container-md search-form">
