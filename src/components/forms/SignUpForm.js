@@ -196,19 +196,19 @@ export default class SignUpForm extends Component {
             {this.state.retypePassword.changed && (
               <FormValidationError message={retypePasswordInputError} />
             )}
-          </form>
-        </div>
-        <div className="sign-up-button container-md text-center py-3">
-          {/* <Link class="btn btn-primary" to="/search">
+            <div className="sign-up-button container-md text-center py-3">
+              {/* <Link class="btn btn-primary" to="/search">
             Sign Up
           </Link> */}
-          <button
-            type="submit"
-            class="btn btn-primary"
-            disabled={this.validateName()}
-          >
-            Sign Up
-          </button>
+              <button
+                type="submit"
+                class="btn btn-primary"
+                disabled={this.validateName()}
+              >
+                Sign Up
+              </button>
+            </div>
+          </form>
         </div>
       </>
     );
