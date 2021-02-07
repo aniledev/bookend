@@ -6,7 +6,10 @@ export default class ResultItem extends Component {
     let summary = this.props.description.substr(0, 650);
 
     return (
-      <section className="row result-item d-flex justify-content-center">
+      <section
+        className="row result-item d-flex justify-content-center"
+        key={this.props.id}
+      >
         <div className="col-3 container-md d-flex text-center my-5">
           <img
             className="results-image"

@@ -11,24 +11,41 @@ import AboutView from "../pages/AboutView.js";
 import ContactView from "../pages/ContactView.js";
 import ProfileView from "../pages/ProfileView.js";
 import NotFoundView from "../pages/NotFoundView.js";
+import STORE from "../dummy-store";
+import context from "../context.js";
 
 export default class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      books: STORE,
+    };
+  }
+
   render() {
+    console.log(this.state.books);
+
+    const value = {
+      books: this.state.books,
+    };
+
     return (
-      <div className="App">
-        <Switch>
-          <Route exact path="/sign-up" component={SignUpView} />
-          <Route exact path="/log-in" component={LogInView} />
-          <Route exact path="/search" component={SearchView} />
-          <Route exact path="/results" component={ResultsView} />
-          <Route exact path="/features" component={FeaturesView} />
-          <Route exact path="/about" component={AboutView} />
-          <Route exact path="/contact" component={ContactView} />
-          <Route exact path="/profile" component={ProfileView} />
-          <Route exact path="/" component={HomeView} />
-          <Route component={NotFoundView} />
-        </Switch>
-      </div>
+      <context.Provider value={value}>
+        <div className="App">
+          <Switch>
+            <Route exact path="/sign-up" component={SignUpView} />
+            <Route exact path="/log-in" component={LogInView} />
+            <Route exact path="/search" component={SearchView} />
+            <Route exact path="/results" component={ResultsView} />
+            <Route exact path="/features" component={FeaturesView} />
+            <Route exact path="/about" component={AboutView} />
+            <Route exact path="/contact" component={ContactView} />
+            <Route exact path="/profile" component={ProfileView} />
+            <Route exact path="/" component={HomeView} />
+            <Route component={NotFoundView} />
+          </Switch>
+        </div>
+      </context.Provider>
     );
   }
 }

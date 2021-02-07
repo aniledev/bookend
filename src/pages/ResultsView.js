@@ -4,6 +4,7 @@ import Footer from "../components/Footer";
 import HeroTitle from "../components/hero/HeroTitle";
 import SearchHeroForm from "../components/forms/SearchHeroForm";
 import ResultsList from "../components/ResultsList";
+import PropTypes from "prop-types";
 
 export default class Results extends Component {
   render() {
@@ -15,10 +16,19 @@ export default class Results extends Component {
             <HeroTitle />
             <SearchHeroForm />
           </section>
-          <ResultsList />
+          <ResultsList books={this.props.books} />
         </main>
         <Footer />
       </div>
     );
   }
 }
+
+Results.propTypes = {
+  // define prop types here
+  books: PropTypes.array,
+};
+
+// Results.defaultProps = {
+//   books: [],
+// };
