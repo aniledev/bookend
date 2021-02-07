@@ -1,8 +1,8 @@
-.error {
+.confirm {
   max-width: 330px;
   margin: 25px;
 }
 
-.X {
-  color: #f25f5c;
+.check {
+  color: #44cf6c;
 }

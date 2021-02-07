@@ -1,6 +1,9 @@
 import React, { Component } from "react";
 import "../../styles/sign-up-form.css";
 import FormValidationError from "../FormValidationError";
+import FormValidationConfirm from "../FormValidationConfirm";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCheck } from "@fortawesome/free-solid-svg-icons";
 
 export default class SignUpForm extends Component {
   constructor(props) {
@@ -36,7 +39,7 @@ export default class SignUpForm extends Component {
       return "Name must be between 3 and 50 characters.";
     }
   }
-  
+
   validateEmail() {
     const email = this.state.email.value.trim();
     const regex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:.[a-zA-Z0-9-]+)*$/;
@@ -119,6 +122,10 @@ export default class SignUpForm extends Component {
     const emailInputError = this.validateEmail();
     const passwordInputError = this.validatePassword();
     const retypePasswordInputError = this.validateRetypePassword();
+    const nameConfirmation = !this.validateName();
+    const emailConfirmation = !this.validateEmail();
+    const passwordConfirmation = !this.validatePassword();
+    const retypePasswordConfirmation = !this.validateRetypePassword();
 
     return (
       <>
@@ -142,6 +149,9 @@ export default class SignUpForm extends Component {
             {this.state.name.changed && (
               <FormValidationError message={nameInputError} />
             )}
+            {this.state.name.changed && (
+              <FormValidationConfirm message={nameConfirmation} />
+            )}
             <div className="form-group">
               <label htmlFor="email" className="sr-only">
                 Email
@@ -158,6 +168,9 @@ export default class SignUpForm extends Component {
             </div>
             {this.state.email.changed && (
               <FormValidationError message={emailInputError} />
+            )}
+            {this.state.email.changed && (
+              <FormValidationConfirm message={emailConfirmation} />
             )}
             <div className="form-group">
               <label htmlFor="password" className="sr-only">
@@ -176,6 +189,9 @@ export default class SignUpForm extends Component {
             {this.state.password.changed && (
               <FormValidationError message={passwordInputError} />
             )}
+            {this.state.password.changed && (
+              <FormValidationConfirm message={passwordConfirmation} />
+            )}
             <div className="form-group">
               <label htmlFor="retype-password" className="sr-only">
                 Retype password
@@ -192,6 +208,9 @@ export default class SignUpForm extends Component {
             </div>
             {this.state.retypePassword.changed && (
               <FormValidationError message={retypePasswordInputError} />
+            )}
+            {this.state.retypePassword.changed && (
+              <FormValidationConfirm message={retypePasswordConfirmation} />
             )}
             <div className="sign-up-button container-md text-center py-3">
               {/* <Link className="btn btn-primary" to="/search">
