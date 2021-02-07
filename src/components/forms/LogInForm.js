@@ -4,7 +4,6 @@ import "../../styles/log-in-form.css";
 export default class LogInForm extends Component {
   constructor(props) {
     super(props);
-
     this.state = {
       email: {
         value: "",
@@ -30,14 +29,22 @@ export default class LogInForm extends Component {
     const password = this.state.password.value.trim();
     // if password is not entered
     if (!password) {
-      return "Please enter your password."
+      return "Please enter your password.";
     }
   }
 
   // methods for updating the state based on form inputs
-  updateEmail() {}
+  updateEmail(email) {
+    this.setState({
+      email: { value: email, changed: true },
+    });
+  }
 
-  updatePassword() {}
+  updatePassword(password) {
+    this.setState({
+      password: { value: password, changed: true },
+    });
+  }
 
   render() {
     return (
