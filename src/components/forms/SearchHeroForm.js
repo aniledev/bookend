@@ -32,6 +32,13 @@ export default class SearchHeroForm extends Component {
     });
   }
 
+  // method for submitting form inputs to the server
+  handleSubmit(event) {
+    // code to be executed here
+    event.preventDefault();
+    console.log(`Form was submitted. Yay!`);
+  }
+
   render() {
     const searchInputError = this.validateSearch();
 
