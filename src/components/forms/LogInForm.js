@@ -13,15 +13,23 @@ export default class LogInForm extends Component {
       password: {
         value: "",
         changed: false,
-      }
-    }
-    }
-}
+      },
+    };
+  }
+
+  // methods for validating the inputs on submision of the form
+
+  validateEmail() {}
+  validatePassword() {}
 
   // methods for updating the state based on form inputs
-  updateEmail() {}
+  updateEmail() {
+    // if email is not entered
+  }
 
-  updatePassword() {}
+  updatePassword() {
+    // if password is not entered
+  }
 
   render() {
     return (
