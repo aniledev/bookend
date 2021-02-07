@@ -22,6 +22,10 @@ export default class App extends Component {
     };
   }
 
+  componentDidMount() {
+    // this is the code to fetch the books from the server/database and then use set state to update the state with the real books and not the dummy data
+  }
+
   render() {
     console.log(this.state.books);
 
