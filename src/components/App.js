@@ -14,6 +14,7 @@ import NotFoundView from "../pages/NotFoundView.js";
 import STORE from "../dummy-store";
 import context from "../context.js";
 
+
 export default class App extends Component {
   constructor(props) {
     super(props);
