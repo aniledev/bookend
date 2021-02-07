@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 
 export default function FormValidationError(props) {
   if (props.message) {
@@ -10,3 +11,7 @@ export default function FormValidationError(props) {
   }
   return <></>;
 }
+
+FormValidationError.propTypes = {
+  message: PropTypes.string,
+};
