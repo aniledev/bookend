@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import "../../styles/log-in-form.css";
+import FormValidationError from "../FormValidationError";
 
 export default class LogInForm extends Component {
   constructor(props) {
@@ -53,8 +54,10 @@ export default class LogInForm extends Component {
     console.log(`Form was submited. Yay!`);
   }
 
-  render () {
-    
+  render() {
+    const emailInputError = this.validateEmail();
+    const passwordInputError = this.validatePassword();
+
     return (
       <>
         <div class="form container-md log-in-form">
@@ -74,6 +77,9 @@ export default class LogInForm extends Component {
                 onChange={(e) => this.updateEmail(e.target.value)}
               />
             </div>
+            {this.state.email.changed && (
+              <FormValidationError message={emailInputError} />
+            )}
             <div class="form-group">
               <label for="password" class="sr-only">
                 Password
@@ -88,6 +94,9 @@ export default class LogInForm extends Component {
                 onChange={(e) => this.updatePassword(e.target.value)}
               />
             </div>
+            {this.state.password.changed && (
+              <FormValidationError message={passwordInputError} />
+            )}
             <div className="sign-up-button container-md text-center py-3">
               {/* <Link class="btn btn-primary" to="/search">
            Log In
