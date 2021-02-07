@@ -61,7 +61,7 @@ export default class LogInForm extends Component {
     return (
       <>
         <div className="form container-md log-in-form">
-          <form className="log-in">
+          <form className="log-in" onSubmit={(e) => this.handleSubmit(e)}>
             <div className="form-group">
               <label htmlFor="email" className="sr-only">
                 Email
