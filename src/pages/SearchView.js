@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import NavBarMini from "../components/navbar/NavBarMini";
 import Footer from "../components/Footer";
-import HeroSubtitleMini from "../components/hero/HeroSubtitleMini";
+import SearchHeroSubtitle from "../components/hero/SearchHeroSubtitle";
 import HeroInput from "../components/hero/HeroInput";
 import HeroTitle from "../components/hero/HeroTitle";
 import SearchImage from "../components/SearchImage";
@@ -14,7 +14,7 @@ export default class Search extends Component {
         <main className="main">
           <section className="hero pt-5">
             <HeroTitle />
-            <HeroSubtitleMini />
+            <SearchHeroSubtitle />
             <HeroInput />
             <SearchImage />
           </section>

@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import HeroTitle from "./HeroTitle";
-import HeroSubtitle from "./HeroSubtitle";
+import HomeHeroSubtitle from "./HomeHeroSubtitle";
 import HeroButtons from "./HeroButtons";
 
 export default class HomeHero extends Component {
@@ -8,7 +8,7 @@ export default class HomeHero extends Component {
     return (
       <>
         <HeroTitle />
-        <HeroSubtitle />
+        <HomeHeroSubtitle />
         <HeroButtons />
       </>
     );

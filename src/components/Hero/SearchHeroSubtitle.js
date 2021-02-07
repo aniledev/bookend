@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 
-export default class HeroSubtitleMini extends Component {
+export default class SearchHeroSubtitle extends Component {
   render() {
     return (
       <div className="hero-subtitle container-md d-flex text-center h4 my-5">
