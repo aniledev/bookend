@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import ResultItem from "./ResultItem";
 import "../styles/result-list.css";
-import STORE from "../dummy-store";
 import context from "../context.js";
 
 export default class ResultsList extends Component {
@@ -12,7 +11,7 @@ export default class ResultsList extends Component {
 
     console.log(books);
 
-    const resultItems = STORE.map((book) => (
+    const resultItems = books.map((book) => (
       <ResultItem
         description={book.description}
         title={book.title}

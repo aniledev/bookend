@@ -16,7 +16,7 @@ export default class Results extends Component {
             <HeroTitle />
             <SearchHeroForm />
           </section>
-          <ResultsList books={this.props.books} />
+          <ResultsList />
         </main>
         <Footer />
       </div>
