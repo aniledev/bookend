@@ -100,7 +100,11 @@ export default class LogInForm extends Component {
               {/* <Link className="btn btn-primary" to="/search">
            Log In
          </Link> */}
-              <button type="submit" className="btn btn-primary">
+              <button
+                type="submit"
+                className="btn btn-primary"
+                disabled={this.validateEmail() || this.validatePassword()}
+              >
                 Log In
               </button>
             </div>
