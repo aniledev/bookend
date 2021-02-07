@@ -203,7 +203,12 @@ export default class SignUpForm extends Component {
               <button
                 type="submit"
                 class="btn btn-primary"
-                disabled={this.validateName()}
+                disabled={
+                  this.validateName() ||
+                  this.validateEmail() ||
+                  this.validatePassword() ||
+                  this.validateRetypePassword()
+                }
               >
                 Sign Up
               </button>
