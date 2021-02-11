@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import FormValidationError from "../FormValidationError";
+import config from "../../config";
 
 export default class SearchHeroForm extends Component {
   constructor(props) {
@@ -9,6 +10,7 @@ export default class SearchHeroForm extends Component {
         value: "",
         changed: false,
       },
+      books: [],
     };
   }
 
@@ -36,7 +38,45 @@ export default class SearchHeroForm extends Component {
   handleSubmit(event) {
     // code to be executed here
     event.preventDefault();
+    const { value } = this.state.search;
+    // const titleSearch = search.split(" ").join(",");
+    console.log(value);
+
+    const myHeaders = new Headers();
+    myHeaders.append("Content-Type", "application/json");
+
     console.log(`Form was submitted. Yay!`);
+
+    const requestOptions = {
+      method: "GET",
+      headers: myHeaders,
+      redirect: "follow",
+    };
+
+    const params = {
+      title: value,
+    };
+
+    function formatQueryParams(params) {
+      const queryItems = Object.keys(params).map(
+        (key) => `${key}=${params[key]}`
+      );
+      // use .join() to combine the query items into a single string
+      return queryItems.join("&");
+    }
+
+    const queryString = formatQueryParams(params);
+    const baseURL = `${config.PORT_URL}/api/results/`;
+    const url = baseURL + "?" + queryString;
+
+    fetch(url, requestOptions)
+      .then((response) => response.json())
+      .then(([data]) => {
+        this.setState({ books: data });
+      })
+      .catch((error) => {
+        console.log(error);
+      });
   }
 
   render() {
@@ -44,7 +84,7 @@ export default class SearchHeroForm extends Component {
 
     return (
       <div className="form container-md search-form">
-        <form className="search" onSubmit={(e) => this.handleSubmit(e)}>
+        <form className="search" onSubmit={(event) => this.handleSubmit(event)}>
           <div className="form-group-search">
             <label htmlFor="search" className="sr-only">
               Search
