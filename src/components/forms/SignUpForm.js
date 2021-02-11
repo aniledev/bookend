@@ -50,7 +50,7 @@ export default class SignUpForm extends Component {
       return "You must enter a valid email address.";
     }
     // if the email is less than 5 characters and greater than 100 characters
-    if (email.length < 3 || email.length > 100) {
+    if (email.length < 3 || email.length > 320) {
       return "Email address must be between 8 and 100 characters.";
     }
   }
