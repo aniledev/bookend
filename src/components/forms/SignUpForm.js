@@ -64,7 +64,8 @@ export default class SignUpForm extends Component {
     }
     // if the password is less than 8 characters
     // if the password does not contain a number
-    // if the password does not contain a special character
+    // if the password does not contain a uppercase letter
+    // if the password does not contain a lower case letter
     if (!password.match(regex)) {
       return "Password must be at least 8 characters and contain 1 uppercase letter, 1 lowercase letter, and 1 number.";
     }
