@@ -3,7 +3,7 @@ import NavBarMini from "../components/navbar/NavBarMini";
 import Footer from "../components/Footer";
 import HeroTitle from "../components/hero/HeroTitle";
 import SearchHeroForm from "../components/forms/SearchHeroForm";
-import ResultsList from "../components/ResultsList";
+import MyList from "../components/MyList";
 
 export default class MyListView extends Component {
   render() {
@@ -15,7 +15,7 @@ export default class MyListView extends Component {
             <HeroTitle />
             <SearchHeroForm />
           </section>
-          <ResultsList />
+          <MyList />
         </main>
         <Footer />
       </div>
