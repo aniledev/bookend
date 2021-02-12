@@ -3,31 +3,20 @@ import "../styles/results-item.css";
 
 export default class MyListItem extends Component {
   handleDeleteBook(event) {
-    // const { title, img, author, description } = this.props;
+    const id = this.props.id;
     console.log("Delete book!");
-    // console.log("Add book!", { title, img, author, description });
+    console.log(id);
 
-    // then use fetch POST api/users/:userId/books to add to the book list
-    // const body = JSON.stringify({
-    //   title: title,
-    //   thumbnailUrl: img,
-    //   shortDescription: description,
-    //   authors: [author],
-    // });
+    const requestOptions = {
+      method: "DELETE",
+      redirect: "follow",
+    };
 
-    // const requestOptions = {
-    //   method: "POST",
-    //   headers: {
-    //     "content-type": "application/json",
-    //   },
-    //   body: body,
-    //   redirect: "follow",
-    // };
-
-    // fetch("http://localhost:8000/api/users/1/books", requestOptions)
-    //   .then((response) => response.text())
-    //   .then((result) => console.log(result))
-    //   .catch((error) => console.log("error", error));
+    fetch(`http://localhost:8000/api/users/1/books/${id}`, requestOptions)
+      .then((response) => response.text())
+      .then((result) => console.log(result))
+      .then(() => this.props.history.push("/my-list"))
+      .catch((error) => console.log("error", error));
   }
 
   render() {
