@@ -45,7 +45,7 @@ export default class MyList extends Component {
         key={book.id}
         description={book.longDescription}
         title={book.title}
-        author={book.authors}
+        author={book.authors[0]}
         img={book.thumbnailUrl}
       />
     ));
