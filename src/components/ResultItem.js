@@ -1,10 +1,11 @@
 import React, { Component } from "react";
-import "../styles/results-image.css";
+import "../styles/results-item.css";
 
 export default class ResultItem extends Component {
   handleAddBook(event) {
-    // const { title, img, author, description } = this.props;
+    const { title, img, author, description } = this.props;
     console.log("Add book!");
+    console.log("Add book!", { title, img, author, description });
     // in this method, I have to capture props which is the bookId
     // then use fetch POST api/users/:userId/books to add to the book list
 
@@ -66,3 +67,10 @@ export default class ResultItem extends Component {
     );
   }
 }
+
+ResultItem.defaultProps = {
+  title: "",
+  description: "",
+  img: "",
+  author: "",
+};
