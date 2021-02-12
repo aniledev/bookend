@@ -35,7 +35,8 @@ export default class MyList extends Component {
   static contextType = context;
 
   render() {
-    const { books = [] } = this.context;
+    // const { books = [] } = this.context;
+
     const { userList = [] } = this.state;
 
     console.log(userList);
