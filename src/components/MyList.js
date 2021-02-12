@@ -13,6 +13,17 @@ export default class MyList extends Component {
 
   componentDidMount() {
     // fetch the users list based on hard coded data
+
+    const requestOptions = {
+      method: "GET",
+      redirect: "follow",
+    };
+
+    fetch("http://localhost:8000/api/users/1/books", requestOptions)
+      .then((response) => response.text())
+      .then((result) => console.log(result))
+      .catch((error) => console.log("error", error));
+
     // use set state to update the state, push into array or use spread operator if necessary
     // map over this.state.books
   }
