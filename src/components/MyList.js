@@ -6,9 +6,9 @@ import context from "../context.js";
 export default class MyList extends Component {
   constructor(props) {
     super(props);
-    this.state({
-      books: [],
-    });
+    this.state = {
+      userList: [],
+    };
   }
 
   componentDidMount() {
@@ -36,16 +36,17 @@ export default class MyList extends Component {
 
   render() {
     const { books = [] } = this.context;
+    const { userList = [] } = this.state;
 
-    console.log(books);
+    console.log(userList);
 
-    const listItems = books.map((book) => (
+    const listItems = userList.map((book) => (
       <MyListItem
-        description={book.description}
-        title={book.title}
-        author={book.author}
-        img={book.img}
         key={book.id}
+        description={book.longDescription}
+        title={book.title}
+        author={book.authors}
+        img={book.thumbnailUrl}
       />
     ));
 
