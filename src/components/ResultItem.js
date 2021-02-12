@@ -34,7 +34,7 @@ export default class ResultItem extends Component {
   }
 
   render() {
-    let summary = this.props.description.substr(0, 650);
+    let summary = this.props.description.substr(0, 643) + " . . . ";
 
     return (
       <section
