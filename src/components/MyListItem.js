@@ -46,10 +46,10 @@ export default class MyListItem extends Component {
           />
           <button
             type="button"
-            className="btn btn-primary add-book"
+            className="btn btn-danger delete-book"
             onClick={this.handleAddBook.bind(this)}
           >
-            Add Book
+            Delete Book
           </button>
         </div>
         <div className="col-9 container-md d-flex flex-column text-left my-5">

@@ -3,7 +3,8 @@
   height: 80%;
 }
 
-.add-book {
+.add-book,
+.delete-book {
   margin-top: 5px;
   width: 52%;
 }
