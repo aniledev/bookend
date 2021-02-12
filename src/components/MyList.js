@@ -20,8 +20,12 @@ export default class MyList extends Component {
     };
 
     fetch("http://localhost:8000/api/users/1/books", requestOptions)
-      .then((response) => response.text())
-      .then((result) => console.log(result))
+      .then((response) => response.json())
+      .then((result) =>
+        this.setState({
+          userList: result["books"],
+        })
+      )
       .catch((error) => console.log("error", error));
 
     // use set state to update the state, push into array or use spread operator if necessary
