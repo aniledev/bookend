@@ -6,11 +6,8 @@ export default class ResultItem extends Component {
     const { title, img, author, description } = this.props;
     console.log("Add book!");
     console.log("Add book!", { title, img, author, description });
-    // in this method, I have to capture props which is the bookId
+   
     // then use fetch POST api/users/:userId/books to add to the book list
-
-    // hardcorded information to be replaced by props
-
     const body = JSON.stringify({
       title: title,
       thumbnailUrl: img,
@@ -41,7 +38,7 @@ export default class ResultItem extends Component {
         className="row result-item d-flex justify-content-center"
         key={this.props.id}
       >
-        <div className="col-4 container-md d-flex flex-column text-center my-5">
+        <div className="col-3 container-md d-flex flex-column justify-content-center my-5">
           <img
             className="results-image"
             src={this.props.img}
@@ -55,7 +52,7 @@ export default class ResultItem extends Component {
             Add Book
           </button>
         </div>
-        <div className="col-8 container-md d-flex flex-column text-left my-5">
+        <div className="col-9 container-md d-flex flex-column text-left my-5">
           <div className="result-info container-md my-3">
             <p>
               <strong>{this.props.title}</strong> by{" "}
