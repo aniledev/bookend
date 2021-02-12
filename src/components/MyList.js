@@ -11,6 +11,12 @@ export default class MyList extends Component {
     });
   }
 
+  componentDidMount() {
+    // fetch the users list based on hard coded data
+    // use set state to update the state, push into array or use spread operator if necessary
+    // map over this.state.books
+  }
+
   static contextType = context;
 
   render() {
