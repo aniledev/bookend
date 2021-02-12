@@ -2,32 +2,32 @@ import React, { Component } from "react";
 import "../styles/results-item.css";
 
 export default class MyListItem extends Component {
-  handleAddBook(event) {
-    const { title, img, author, description } = this.props;
-    console.log("Add book!");
-    console.log("Add book!", { title, img, author, description });
+  handleDeleteBook(event) {
+    // const { title, img, author, description } = this.props;
+    console.log("Delete book!");
+    // console.log("Add book!", { title, img, author, description });
 
     // then use fetch POST api/users/:userId/books to add to the book list
-    const body = JSON.stringify({
-      title: title,
-      thumbnailUrl: img,
-      shortDescription: description,
-      authors: [author],
-    });
+    // const body = JSON.stringify({
+    //   title: title,
+    //   thumbnailUrl: img,
+    //   shortDescription: description,
+    //   authors: [author],
+    // });
 
-    const requestOptions = {
-      method: "POST",
-      headers: {
-        "content-type": "application/json",
-      },
-      body: body,
-      redirect: "follow",
-    };
+    // const requestOptions = {
+    //   method: "POST",
+    //   headers: {
+    //     "content-type": "application/json",
+    //   },
+    //   body: body,
+    //   redirect: "follow",
+    // };
 
-    fetch("http://localhost:8000/api/users/1/books", requestOptions)
-      .then((response) => response.text())
-      .then((result) => console.log(result))
-      .catch((error) => console.log("error", error));
+    // fetch("http://localhost:8000/api/users/1/books", requestOptions)
+    //   .then((response) => response.text())
+    //   .then((result) => console.log(result))
+    //   .catch((error) => console.log("error", error));
   }
 
   render() {
@@ -47,7 +47,7 @@ export default class MyListItem extends Component {
           <button
             type="button"
             className="btn btn-danger delete-book"
-            onClick={this.handleAddBook.bind(this)}
+            onClick={this.handleDeleteBook.bind(this)}
           >
             Delete Book
           </button>
