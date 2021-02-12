@@ -18,6 +18,9 @@ export default class NavBarRightMini extends Component {
           <NavLink className="nav-link" to="/contact">
             Contact
           </NavLink>
+          <NavLink className="nav-link" to="/my-list">
+            My List
+          </NavLink>
           <NavLink className="nav-link" to="/profile">
             Profile
           </NavLink>
