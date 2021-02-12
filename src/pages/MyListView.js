@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import NavBarMini from "../components/navbar/NavBarMini";
 import Footer from "../components/Footer";
-import HeroTitle from "../components/hero/HeroTitle";
+import MyListHeroTitle from "../components/hero/MyListHeroTitle";
 import SearchHeroForm from "../components/forms/SearchHeroForm";
 import MyList from "../components/MyList";
 
@@ -12,8 +12,7 @@ export default class MyListView extends Component {
         <NavBarMini />
         <main className="main">
           <section className="hero pt-5">
-            <HeroTitle />
-            <SearchHeroForm />
+            <MyListHeroTitle />
           </section>
           <MyList />
         </main>
