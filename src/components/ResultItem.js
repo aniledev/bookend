@@ -10,11 +10,12 @@ export default class ResultItem extends Component {
     // then use fetch POST api/users/:userId/books to add to the book list
 
     // hardcorded information to be replaced by props
+
     const body = JSON.stringify({
-      title: "New book",
-      thumbnailUrl: "https://www.google.com",
-      shortDescription: "shortDescription",
-      authors: ["Brown"],
+      title: title,
+      thumbnailUrl: img,
+      shortDescription: description,
+      authors: [author],
     });
 
     const requestOptions = {
