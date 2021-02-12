@@ -49,8 +49,8 @@ export default class ResultItem extends Component {
           />
           <button
             type="button"
-            className="btn btn-primary"
-            onClick={this.handleAddBook}
+            className="btn btn-primary add-book"
+            onClick={this.handleAddBook.bind(this)}
           >
             Add Book
           </button>
