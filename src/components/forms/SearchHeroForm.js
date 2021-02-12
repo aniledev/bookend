@@ -11,6 +11,7 @@ export default class SearchHeroForm extends Component {
         changed: false,
       },
       books: [],
+      searchString: "",
     };
   }
 
@@ -31,6 +32,12 @@ export default class SearchHeroForm extends Component {
   updateSearch(search) {
     this.setState({
       search: { value: search, changed: true },
+    });
+  }
+
+  updateSearchString(queryString) {
+    this.setState({
+      searchString: queryString,
     });
   }
 
@@ -68,6 +75,8 @@ export default class SearchHeroForm extends Component {
     const queryString = formatQueryParams(params);
     const baseURL = `${config.PORT_URL}/api/results/`;
     const url = baseURL + "?" + queryString;
+
+    this.updateSearchString(queryString);
 
     fetch(url, requestOptions)
       .then((response) => response.json())
