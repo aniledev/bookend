@@ -3,13 +3,32 @@ import "../styles/results-image.css";
 
 export default class ResultItem extends Component {
   handleAddBook(event) {
+    // const { title, img, author, description } = this.props;
     console.log("Add book!");
     // in this method, I have to capture props which is the bookId
     // then use fetch POST api/users/:userId/books to add to the book list
 
+    // hardcorded information to be replaced by props
+    const body = JSON.stringify({
+      title: "New book",
+      thumbnailUrl: "https://www.google.com",
+      shortDescription: "shortDescription",
+      authors: ["Brown"],
+    });
 
+    const requestOptions = {
+      method: "POST",
+      headers: {
+        "content-type": "application/json",
+      },
+      body: body,
+      redirect: "follow",
+    };
 
-    
+    fetch("http://localhost:8000/api/users/1/books", requestOptions)
+      .then((response) => response.text())
+      .then((result) => console.log(result))
+      .catch((error) => console.log("error", error));
   }
 
   render() {
