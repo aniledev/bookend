@@ -44,6 +44,7 @@ export default class MyList extends Component {
     const listItems = userList.map((book) => (
       <MyListItem
         key={book.id}
+        id={book.id}
         description={book.longDescription}
         title={book.title}
         author={book.authors[0]}
