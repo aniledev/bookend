@@ -4,6 +4,13 @@ import "../styles/result-list.css";
 import context from "../context.js";
 
 export default class MyList extends Component {
+  constructor(props) {
+    super(props);
+    this.state({
+      books: [],
+    });
+  }
+
   static contextType = context;
 
   render() {
