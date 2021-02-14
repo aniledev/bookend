@@ -27,6 +27,8 @@ export default class App extends Component {
     // this is the code to fetch the books from the server/database and then use set state to update the state with the real books and not the dummy data
   }
 
+  // write setbooks function ; user arrow function for setBooks(){}
+
   render() {
     console.log(this.state.books);
 
