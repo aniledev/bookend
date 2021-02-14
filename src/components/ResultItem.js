@@ -11,10 +11,11 @@ export default class ResultItem extends Component {
     const body = JSON.stringify({
       title: title,
       thumbnailUrl: img,
-      shortDescription: description,
+      longDescription: description,
       authors: [author],
     });
 
+    console.log(body);
     const requestOptions = {
       method: "POST",
       headers: {
