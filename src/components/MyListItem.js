@@ -2,6 +2,10 @@ import React, { Component } from "react";
 import "../styles/results-item.css";
 
 export default class MyListItem extends Component {
+  static defaultProps = {
+    history: { goBack: () => {} },
+  };
+
   handleDeleteBook(event) {
     const id = this.props.id;
     console.log("Delete book!");
@@ -13,9 +17,13 @@ export default class MyListItem extends Component {
     };
 
     fetch(`http://localhost:8000/api/users/1/books/${id}`, requestOptions)
-      .then((response) => response.text())
-      .then((result) => console.log(result))
-      .then(() => this.props.history.push("/my-list"))
+      .then((response) => {
+        response.text();
+        this.props.history.goBack();
+      })
+      .then((result) => {
+        console.log(result);
+      })
       .catch((error) => console.log("error", error));
   }
 

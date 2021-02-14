@@ -27,7 +27,7 @@ export default class MyList extends Component {
       .then((response) => response.json())
       .then((result) => {
         this.setState({ userList: result["books"] });
-        })
+      })
       .catch((error) => console.log("error", error));
 
     // use set state to update the state, push into array or use spread operator if necessary
