@@ -11,6 +11,10 @@ export default class MyList extends Component {
     };
   }
 
+  static defaultProps = {
+    history: { goBack: () => {} },
+  };
+
   componentDidMount() {
     // fetch the users list based on hard coded data
 
@@ -49,6 +53,7 @@ export default class MyList extends Component {
         title={book.title}
         author={book.authors[0]}
         img={book.thumbnailUrl}
+        history={this.props.history}
       />
     ));
 
