@@ -6,7 +6,7 @@ export default class ResultItem extends Component {
     const { title, img, author, description } = this.props;
     console.log("Add book!");
     console.log("Add book!", { title, img, author, description });
-   
+
     // then use fetch POST api/users/:userId/books to add to the book list
     const body = JSON.stringify({
       title: title,
@@ -16,6 +16,7 @@ export default class ResultItem extends Component {
     });
 
     console.log(body);
+
     const requestOptions = {
       method: "POST",
       headers: {

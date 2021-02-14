@@ -13,7 +13,7 @@ export default class ResultsList extends Component {
 
     const resultItems = books.map((book) => (
       <ResultItem
-        description={book.description}
+        description={book.longDescription}
         title={book.title}
         author={book.author}
         img={book.img}
