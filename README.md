@@ -34,9 +34,11 @@ In this project, I created an API powered bookmark application. The project has 
 
 This application is an API powered bookmark creation app that relies on:
 * [JavaScript](https://www.javascript.com/)
-* [jQuery](https://jquery.com)
 * [Node](https://nodejs.org/)
-* [Webpack](https://webpack.js.org/)
+* [Express](https://expressjs.com/)
+* [PostgreSQL](https://www.postgresql.org/)
+* [RESTful API](https://github.com/aniledev/bookend-server)
+* [Vercel](https://vercel.com/)
 
 
 ## User Stories
