@@ -23,7 +23,7 @@ export default class MyList extends Component {
       redirect: "follow",
     };
 
-    fetch("http://localhost:8000/api/users/1/books", requestOptions)
+    fetch("https://bookend-server.herokuapp.com/api/users/1/books", requestOptions)
       .then((response) => response.json())
       .then((result) => {
         this.setState({ userList: result["books"] });

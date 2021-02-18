@@ -16,7 +16,10 @@ export default class MyListItem extends Component {
       redirect: "follow",
     };
 
-    fetch(`http://localhost:8000/api/users/1/books/${id}`, requestOptions)
+    fetch(
+      `https://bookend-server.herokuapp.com/api/users/1/books/${id}`,
+      requestOptions
+    )
       .then((response) => {
         response.text();
         this.props.history.goBack();

@@ -26,7 +26,10 @@ export default class ResultItem extends Component {
       redirect: "follow",
     };
 
-    fetch("http://localhost:8000/api/users/1/books", requestOptions)
+    fetch(
+      "https://bookend-server.herokuapp.com/api/users/1/books",
+      requestOptions
+    )
       .then((response) => response.text())
       .then((result) => console.log(result))
       .catch((error) => console.log("error", error));
