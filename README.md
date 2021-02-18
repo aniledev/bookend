@@ -25,7 +25,11 @@ https://bookend.vercel.app/
 In this project, I created an API powered book recommendation application. The project has a custom built RESTful API using Express and allows for CRUD actions. 
 
 ![Bookend Application](https://github.com/aniledev/bookend/blob/master/images/landing.png?raw=true)
+
+
 ![Bookend Application 2](https://github.com/aniledev/bookend/blob/master/images/results.png?raw=true)
+
+
 ![Bookend Application 3](https://github.com/aniledev/bookend/blob/master/images/list.png?raw=true)
 
 ## 
