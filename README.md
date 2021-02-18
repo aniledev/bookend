@@ -1,4 +1,4 @@
-# API Powered Book Recommendation Application
+# API Powered Bookend Application
 
 <!-- TABLE OF CONTENTS -->
 ## Contents 
@@ -24,6 +24,9 @@ https://bookend.vercel.app/
 
 In this project, I created an API powered book recommendation application. The project has a custom built RESTful API using Express and allows for CRUD actions. 
 
+![Bookend Application 4](https://github.com/aniledev/bookend/blob/with-state/images/wireframes.png?raw=true)
+
+
 ![Bookend Application](https://github.com/aniledev/bookend/blob/master/images/landing.png?raw=true)
 
 
@@ -32,7 +35,7 @@ In this project, I created an API powered book recommendation application. The p
 
 ![Bookend Application 3](https://github.com/aniledev/bookend/blob/master/images/list.png?raw=true)
 
-## 
+
 ## Built With
 
 This application is an API powered book recommendation app that relies on:
