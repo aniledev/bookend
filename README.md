@@ -25,8 +25,6 @@ https://bookend.vercel.app/
 
 In this project, I created an API powered bookmark application. The project has a RESTful API and allows for full CRUD actions. Use this bookmark app to collected websites and links you want to share or come back to while clicking through the web. 
 
-
-
 ![Bookmark Application](https://github.com/aniledev/elinam-bookmark-app/blob/gh-pages/bookmark-app.png?raw=true)
 
 
@@ -34,6 +32,7 @@ In this project, I created an API powered bookmark application. The project has 
 
 This application is an API powered bookmark creation app that relies on:
 * [JavaScript](https://www.javascript.com/)
+* [React](https://reactjs.org/)
 * [Node](https://nodejs.org/)
 * [Express](https://expressjs.com/)
 * [PostgreSQL](https://www.postgresql.org/)
@@ -65,8 +64,6 @@ This application is an API powered bookmark creation app that relies on:
 - Responsive and mobile-first design
 - Follows a11y best practices
 
-
-<hr/>
 
 ## Getting Started with Create React App
 
@@ -109,7 +106,6 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-<hr/>
 
 ## Upcoming Features
 
@@ -119,7 +115,9 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 <!-- ACKNOWLEDGEMENTS -->
 
 ## Acknowledgements
+* [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
 * [Normalize.css](https://necolas.github.io/normalize.css/)
 * [Font Awesome](https://fontawesome.com)
+* [Jest](https://jestjs.io/)
 * [Thinkful Coding Bootcamp](https://www.thinkful.com/)
 
