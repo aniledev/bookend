@@ -24,12 +24,12 @@ https://bookend.vercel.app/
 
 In this project, I created an API powered book recommendation application. The project has a custom built RESTful API using Express and allows for CRUD actions. 
 
-![Bookmark Application](https://github.com/aniledev/elinam-bookmark-app/blob/gh-pages/bookmark-app.png?raw=true)
+![Bookend Application](https://github.com/aniledev/elinam-bookmark-app/blob/gh-pages/bookmark-app.png?raw=true)
 
-
+## 
 ## Built With
 
-This application is an API powered bookmark creation app that relies on:
+This application is an API powered book recommendation app that relies on:
 * [JavaScript](https://www.javascript.com/)
 * [React](https://reactjs.org/)
 * [Node](https://nodejs.org/)
